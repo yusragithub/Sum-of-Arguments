@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Arguments</title>
+</head>
+<body>
+    <h1>Sum of Arguments</h1>
+    <p id=p1></p>
+    <script>
+        function Sum() {
+           var sum = 0
+        for (i = 0; i < arguments.length; i++) {
+            sum = arguments[i];
+        }
+        return sum;
+    }
+    document.getElementById("p1").innerHTML = Sum (1, 33, 83, 56, 90);
+
+    var value = Math.sin (67);
+    document.write ("Sin 67 is : " + value + "<br>");
+    var value = Math.cos(18);
+    document.write("Cos 18 is : " + value + "<br>");
+    var value = Math.tan(83);
+    document.write("Tan 83 is : " + value + "<br>");
+    </script>
+</body>
+</html>
